@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="latihan.restassured.SampleRestAssured">
+      <class name="latihan.selenium.CekJudul">
         <methods>
-          <include name="befTest"/>
-          <include name="testDelete"/>
+          <include name="cekGoogle"/>
         </methods>
-      </class> <!-- latihan.restassured.SampleRestAssured -->
+      </class> <!-- latihan.selenium.CekJudul -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
