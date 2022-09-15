@@ -1,4 +1,4 @@
-package latihan.selenium;
+package latihan.selenium.selector;
 
 import java.util.List;
 

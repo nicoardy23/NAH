@@ -1,4 +1,4 @@
-package latihan.selenium;
+package latihan.selenium.cssselector;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,15 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TagName {
+public class CSSLocatingByPlaceholder {
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
-		 String baseUrl = "https://formy-project.herokuapp.com/form";
+		 String baseUrl = "https://demoqa.com/automation-practice-form";
 		 driver.get(baseUrl);
 
-		 WebElement isiTag = driver.findElement(By.tagName("label"));
-		 System.out.println(isiTag.getText());
+		 driver.findElement(By.cssSelector("textarea[placeholder = 'Current Address']")).
+		 sendKeys("Jalan Rusak no. 145 Kelurahan Kuvukiland Kota Jakarta Tenggara");
 		}
 }

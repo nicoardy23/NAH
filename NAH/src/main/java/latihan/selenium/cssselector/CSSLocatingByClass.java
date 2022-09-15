@@ -1,4 +1,4 @@
-package latihan.selenium;
+package latihan.selenium.cssselector;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="latihan.selenium.CekJudul">
+      <class name="tugas.selenium.formy.Autocomplete">
         <methods>
-          <include name="cekGoogle"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testAutocomplete"/>
         </methods>
-      </class> <!-- latihan.selenium.CekJudul -->
+      </class> <!-- tugas.selenium.formy.Autocomplete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
