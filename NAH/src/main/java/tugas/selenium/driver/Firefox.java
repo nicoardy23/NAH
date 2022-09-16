@@ -1,10 +1,10 @@
-package latihan.factoryobject.strategies;
+package tugas.selenium.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import latihan.factoryobject.strategies.DriverStrategy;
+import tugas.selenium.driver.DriverStrategy;
 
 public class Firefox implements DriverStrategy {
 	public WebDriver setStrategy() {

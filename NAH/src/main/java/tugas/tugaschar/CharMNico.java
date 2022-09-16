@@ -1,4 +1,4 @@
-package test.tugaschar;
+package tugas.tugaschar;
 import java.util.*;
 
 public class CharMNico {
