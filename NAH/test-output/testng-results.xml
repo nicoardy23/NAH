@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-16T18:17:23 WIB" name="Default suite" finished-at="2022-09-16T18:17:38 WIB" duration-ms="14802">
+  <suite started-at="2022-09-17T14:11:16 WIB" name="Default suite" finished-at="2022-09-17T14:11:16 WIB" duration-ms="7">
     <groups>
     </groups>
-    <test started-at="2022-09-16T18:17:23 WIB" name="Default test" finished-at="2022-09-16T18:17:38 WIB" duration-ms="14802">
-      <class name="tugas.selenium.amazon.TestFormAmazon">
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:tugas.selenium.amazon.TestFormAmazon@130c12b7]" started-at="2022-09-16T18:17:23 WIB" name="pageObject" finished-at="2022-09-16T18:17:34 WIB" duration-ms="10827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageObject -->
-        <test-method signature="testInputAll()[pri:0, instance:tugas.selenium.amazon.TestFormAmazon@130c12b7]" started-at="2022-09-16T18:17:34 WIB" name="testInputAll" finished-at="2022-09-16T18:17:37 WIB" duration-ms="2643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInputAll -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tugas.selenium.amazon.TestFormAmazon@130c12b7]" started-at="2022-09-16T18:17:37 WIB" name="closeBrowser" finished-at="2022-09-16T18:17:38 WIB" duration-ms="1280" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tugas.selenium.amazon.TestFormAmazon -->
+    <test started-at="2022-09-17T14:11:16 WIB" name="Default test" finished-at="2022-09-17T14:11:16 WIB" duration-ms="7">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

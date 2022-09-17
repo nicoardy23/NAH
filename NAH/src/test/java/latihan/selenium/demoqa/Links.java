@@ -8,6 +8,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import java.io.File;
+import java.time.Duration;
+
 import org.apache.commons.io.FileUtils;
 
 public class Links {
