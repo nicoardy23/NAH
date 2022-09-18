@@ -39,7 +39,7 @@ JSONObject req;
 	public void testGet() {
 		given().
 //		param("first_name", "Nico").
-		get("/users/3").
+		get("/users/21").
 		then().
 		statusCode(200).
 		log().
