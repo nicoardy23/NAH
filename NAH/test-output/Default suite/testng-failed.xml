@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ujian.ujiankeempat.openweather.ByLatLon">
+      <class name="tugas.cucumber.outlinescenario.OutlineTestRunner">
         <methods>
-          <include name="testGet"/>
-          <include name="befTest"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="5"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- ujian.ujiankeempat.openweather.ByLatLon -->
+      </class> <!-- tugas.cucumber.outlinescenario.OutlineTestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

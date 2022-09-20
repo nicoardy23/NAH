@@ -32,6 +32,12 @@ public class AddCustomer {
 	@FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Clear cache'])[1]/following::p[20]")
 	private WebElement customer;
 	
+	@FindBy(xpath = "//h4[normalize-space()='Welcome to your store!']")
+	private WebElement validPlus;
+	
+	@FindBy(xpath = "//i[@class='fas fa-plus']")
+	private WebElement plus;
+	
 	@FindBy(linkText = "Add new")
 	private WebElement addCustomer;
 	
@@ -88,6 +94,9 @@ public class AddCustomer {
 
 	@FindBy(id = "search-customers")
 	private WebElement searchCustomer;
+	
+	@FindBy(xpath = "//td[normalize-space()='deepeshraj5009@gmail.com']")
+	private WebElement foundEmailout;
 	
 	@FindBy(xpath = "//table[@id='customers-grid']/tbody/tr/td[2]")
 	private WebElement foundEmail;
@@ -202,7 +211,19 @@ public class AddCustomer {
 		searchCustomer.click();
 	}
 	
+	public void klikPlus() {
+		plus.click();
+	}
+	
+	public String getValidPlus() {
+		return validPlus.getText();
+	}
+	
 	public String getValidEmail() {
 		return foundEmail.getText();
+	}
+	
+	public String getValidEmailOut() {
+		return foundEmailout.getText();
 	}
 }

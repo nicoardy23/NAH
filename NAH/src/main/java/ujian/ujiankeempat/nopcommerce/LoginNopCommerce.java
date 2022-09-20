@@ -1,12 +1,12 @@
 package ujian.ujiankeempat.nopcommerce;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import tugas.selenium.DriverSingleton;
+import latihan.factoryobject.DriverSingleton;
+
 
 public class LoginNopCommerce {
 	private WebDriver driver;
@@ -48,14 +48,10 @@ public class LoginNopCommerce {
 	}
 	
 	public void isiEmail(String mail) {
-		email.click();
-		email.clear();
 		email.sendKeys(mail);
 	}	
 
 	public void isiPassword(String pass) {
-		password.click();
-		password.clear();
 		password.sendKeys(pass);
 	}
 	
