@@ -64,16 +64,18 @@ public class OutlineTestHooks {
 //	@AfterTest
 	@AfterAll
 	public static void closeBrowser() {
-		delay(2);
+		delay(2, delay);
 		DriverSingleton.closeObjectInstance();
 	}
 	
-	public static void delay(int detik) {
-		try {
-			Thread.sleep(1000*detik);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	public static void delay(int detik, String delays) {
+		if (delays.equals("y")) {			
+			try {
+				Thread.sleep(1000*detik);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 	

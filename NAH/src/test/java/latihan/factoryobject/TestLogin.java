@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import latihan.factoryobject.pages.LoginPage;
-import latihan.factoryobject.util.Constants;
+import latihan.factoryobject.util.Constant;
 
 public class TestLogin {
 	public static WebDriver driver;
@@ -20,9 +20,9 @@ public class TestLogin {
 	
 	@BeforeMethod
 	public void pageObject() {
-		DriverSingleton.getInstance(Constants.CHROME);
+		DriverSingleton.getInstance(Constant.CHROME);
 		driver = DriverSingleton.getDriver();
-		driver.get(Constants.URL);
+		driver.get(Constant.URL);
 		loginPage = new LoginPage();
 	}
 	

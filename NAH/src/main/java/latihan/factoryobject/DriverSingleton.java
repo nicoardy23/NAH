@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 import latihan.factoryobject.strategies.DriverStrategy;
 import latihan.factoryobject.strategies.DriverStrategyImplementer;
-import latihan.factoryobject.util.Constants;
+import latihan.factoryobject.util.Constant;
 
 public class DriverSingleton {
 	private static DriverSingleton instance = null;
@@ -19,7 +19,7 @@ public class DriverSingleton {
 	public WebDriver instantiate(String strategy) {
 		DriverStrategy driverStrategy = DriverStrategyImplementer.chooseStrategy(strategy);
 		driver = driverStrategy.setStrategy();
-		driver.manage().timeouts().implicitlyWait(Constants.TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Constant.TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
 		return driver;

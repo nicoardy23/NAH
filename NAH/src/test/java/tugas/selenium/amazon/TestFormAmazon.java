@@ -2,6 +2,7 @@ package tugas.selenium.amazon;
 
 import org.testng.annotations.*;
 
+import latihan.factoryobject.utils.Utils;
 import tugas.selenium.DriverSingleton;
 import tugas.selenium.pages.FormAmazon;
 import tugas.selenium.util.Constant;
@@ -15,6 +16,7 @@ import java.awt.AWTException;
 public class TestFormAmazon {
 	public static WebDriver driver;
 	private FormAmazon formAmazon;
+	private String strDelay = Constant.GLOB_PARAM_DELAY;
 	
 	
 	@BeforeMethod

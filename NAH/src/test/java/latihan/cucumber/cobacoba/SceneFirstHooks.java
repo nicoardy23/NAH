@@ -16,7 +16,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import latihan.factoryobject.DriverSingleton;
 import latihan.factoryobject.scenariotest.NOPCSceneLogin;
-import latihan.factoryobject.util.Constants;
+import latihan.factoryobject.util.Constant;
 import latihan.factoryobject.utils.Utils;
 
 public class SceneFirstHooks {
@@ -26,7 +26,7 @@ public class SceneFirstHooks {
 
 	@Before
 	public void setUp() {
-		DriverSingleton.getInstance(Constants.CHROME);
+		DriverSingleton.getInstance(Constant.CHROME);
 		driver = DriverSingleton.getDriver();
 		NOPCSceneLogin[] tests = NOPCSceneLogin.values();
 		extentTest = reports.startTest(tests[Utils.testCount].getTestName());

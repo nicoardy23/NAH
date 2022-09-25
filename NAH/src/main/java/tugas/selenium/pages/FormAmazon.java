@@ -2,8 +2,6 @@ package tugas.selenium.pages;
 
 import java.awt.AWTException;
 import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
@@ -13,10 +11,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import latihan.factoryobject.utils.Utils;
 import tugas.selenium.DriverSingleton;
+import tugas.selenium.util.Constant;
 
 public class FormAmazon {
-private WebDriver driver;
+	private String strDelay = Constant.GLOB_PARAM_DELAY;
+	private WebDriver driver;
 	
 	public FormAmazon() {
 		this.driver = DriverSingleton.getDriver();
@@ -96,20 +97,23 @@ private WebDriver driver;
 	
 	// Page Object
 	public void isiNamaDepan(String un) {
-		this.firstName.click();;
+		this.firstName.click();
 		this.firstName.clear();
+		Utils.delay(5, strDelay);
 		this.firstName.sendKeys(un);
 	}
 	
 	public void isiNamaBelakang(String un) {
-		this.lastName.click();;
+		this.lastName.click();
 		this.lastName.clear();
+		Utils.delay(5, strDelay);
 		this.lastName.sendKeys(un);
 	}
 
 	public void isiEmail(String un) {
-		this.userEmail.click();;
+		this.userEmail.click();
 		this.userEmail.clear();
+		Utils.delay(5, strDelay);
 		this.userEmail.sendKeys(un);
 	}
 	

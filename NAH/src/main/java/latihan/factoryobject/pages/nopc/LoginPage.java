@@ -6,10 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import latihan.factoryobject.DriverSingleton;
+import latihan.factoryobject.util.Constant;
+import latihan.factoryobject.utils.Utils;
 
 public class LoginPage {
 
 	private WebDriver driver;
+	private String strDelay = Constant.GLOB_PARAM_DELAY;
 	
 	public LoginPage() {
 		this.driver = DriverSingleton.getDriver();
@@ -36,6 +39,7 @@ public class LoginPage {
 	public void login(String username, String password) {
 		this.username.clear();
 		this.username.sendKeys(username);
+		Utils.delay(1, strDelay);
 		this.password.clear();
 		this.password.sendKeys(password);
 	}
@@ -50,9 +54,6 @@ public class LoginPage {
 	}
 	
 	public String getTxtEmpInfo() {
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {}
 		return valLogin.getText();
 	}
 	

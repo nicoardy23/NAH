@@ -1,142 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-20T23:28:24 WIB" name="Default suite" finished-at="2022-09-20T23:28:45 WIB" duration-ms="20962">
+  <suite started-at="2022-09-25T11:16:11 WIB" name="Default suite" finished-at="2022-09-25T11:16:11 WIB" duration-ms="77">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tugas.cucumber.outlinescenario.OutlineTestRunner@4b741d6d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-20T23:28:24 WIB" name="Default test" finished-at="2022-09-20T23:28:45 WIB" duration-ms="20962">
-      <class name="tugas.cucumber.outlinescenario.OutlineTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tugas.cucumber.outlinescenario.OutlineTestRunner@4b741d6d]" started-at="2022-09-20T23:28:24 WIB" name="setUpClass" finished-at="2022-09-20T23:28:25 WIB" duration-ms="843" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6785c9fa]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-09-25T11:16:11 WIB" name="Default test" finished-at="2022-09-25T11:16:11 WIB" duration-ms="77">
+      <class name="ujian.ujiankelima.testng.TestParsing">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="befTest" finished-at="2022-09-25T11:16:11 WIB" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tugas.cucumber.outlinescenario.OutlineTestRunner@4b741d6d]" started-at="2022-09-20T23:28:25 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T23:28:34 WIB" duration-ms="8705" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Invalid login outline"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Invalid Username Password NOPCommerce"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- befTest -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="befMethod" finished-at="2022-09-25T11:16:11 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tugas.cucumber.outlinescenario.OutlineTestRunner@4b741d6d]" started-at="2022-09-20T23:28:34 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T23:28:36 WIB" duration-ms="1648" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Invalid login outline"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Invalid Username Password NOPCommerce"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testParsingInteger()[pri:1, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="testParsingInteger" finished-at="2022-09-25T11:16:11 WIB" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tugas.cucumber.outlinescenario.OutlineTestRunner@4b741d6d]" started-at="2022-09-20T23:28:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T23:28:37 WIB" duration-ms="1779" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Invalid login outline"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Invalid Username Password NOPCommerce"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testParsingInteger -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="aftMethod" finished-at="2022-09-25T11:16:11 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tugas.cucumber.outlinescenario.OutlineTestRunner@4b741d6d]" started-at="2022-09-20T23:28:37 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T23:28:39 WIB" duration-ms="1774" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Invalid login outline"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Invalid Username Password NOPCommerce"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="befMethod" finished-at="2022-09-25T11:16:11 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tugas.cucumber.outlinescenario.OutlineTestRunner@4b741d6d]" started-at="2022-09-20T23:28:39 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T23:28:42 WIB" duration-ms="2586" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Valid login outline"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Valid Username Password NOPCommerce"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testParsingDouble()[pri:2, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="testParsingDouble" finished-at="2022-09-25T11:16:11 WIB" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tugas.cucumber.outlinescenario.OutlineTestRunner@4b741d6d]" started-at="2022-09-20T23:28:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T23:28:42 WIB" duration-ms="334" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Dashboard NOPCommerce function"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Dashboard User NOPCommerce"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
-at ujian.ujiankeempat.nopcommerce.AddCustomer.klikPlus(AddCustomer.java:215)
-at tugas.cucumber.outlinescenario.DashboardOutline.user_click_menu_dashboard_outline_nop_commerce(DashboardOutline.java:26)
-at ✽.User click menu Dashboard Outline NOPCommerce(file:///C:/TRAINING/SQA/NAH/src/test/resources/tugas/cucumber/outlinescenario/03dashboard.feature:4)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- testParsingDouble -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="aftMethod" finished-at="2022-09-25T11:16:11 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tugas.cucumber.outlinescenario.OutlineTestRunner@4b741d6d]" started-at="2022-09-20T23:28:42 WIB" name="tearDownClass" finished-at="2022-09-20T23:28:45 WIB" duration-ms="3231" status="PASS">
+        </test-method> <!-- aftMethod -->
+        <test-method signature="testParsingLong()[pri:3, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="testParsingLong" finished-at="2022-09-25T11:16:11 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- tugas.cucumber.outlinescenario.OutlineTestRunner -->
+        </test-method> <!-- testParsingLong -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="befMethod" finished-at="2022-09-25T11:16:11 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="aftMethod" finished-at="2022-09-25T11:16:11 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="befMethod" finished-at="2022-09-25T11:16:11 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testParsingFloat()[pri:4, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="testParsingFloat" finished-at="2022-09-25T11:16:11 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParsingFloat -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="aftMethod" finished-at="2022-09-25T11:16:11 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="aftTest()[pri:0, instance:ujian.ujiankelima.testng.TestParsing@6c1a5b54]" started-at="2022-09-25T11:16:11 WIB" name="aftTest" finished-at="2022-09-25T11:16:11 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftTest -->
+      </class> <!-- ujian.ujiankelima.testng.TestParsing -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
