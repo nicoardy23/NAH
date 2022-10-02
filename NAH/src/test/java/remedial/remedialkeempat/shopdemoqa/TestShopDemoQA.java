@@ -53,7 +53,6 @@ public class TestShopDemoQA {
 	} 
 	
 //	@Test(priority = 0)
-//	@Test
 	public void testRegister() throws AWTException, InterruptedException {
 		acc.klikDismiss();
 		acc.webAcc();
@@ -76,7 +75,6 @@ public class TestShopDemoQA {
 	}
 	
 //	@Test(priority = 2)
-//	@Test
 	public void testWishList() {
 		acc.klikDismiss();
 		cart.clickWish();
@@ -85,7 +83,6 @@ public class TestShopDemoQA {
 	}
 	
 //	@Test(priority = 3)
-//	@Test
 	public void testComment() {
 		comm.toPageComment();
 		comm.isiAuthorComment("cobaauthor1");
@@ -96,7 +93,6 @@ public class TestShopDemoQA {
 	}
 
 //	@Test(priority = 4)
-//	@Test
 	public void testBuy() throws AWTException  {
 		buy.clickToBuy();
 		buy.pilihColor();
@@ -106,8 +102,8 @@ public class TestShopDemoQA {
 		assertTrue(buy.validNotif().contains("size grey"));
 	}
 	
-//	@Test(priority = 5)
-//	@Test
+	/* Failed Test
+	@Test(priority = 5)
 	public void testCompare() {
 		main.productOne();
 		main.clickClose();
@@ -115,23 +111,39 @@ public class TestShopDemoQA {
 		main.clickClose();
 		main.productTwo();
 		assertTrue(main.validProdOne().contains("black lux"));
-//		assertTrue(comp.validProdTwo().contains("Black Cross"));
-	}
+		assertTrue(comp.validProdTwo().contains("Black Cross"));
+	}*/
 	
-//	@Test(priority = 6)
-//	@Test
+	/* Failed Test
+	@Test(priority = 6)
 	public void testAdmin() throws InterruptedException {
 		main.clickAdminOne();
 		System.out.println(main.validAdminOne());
-//		assertTrue(main.validAdminOne().contains("Diana"));
-//		main.clickAdminTwo();
-//		assertTrue(main.validAdminTwo().contains("Johnny"));
-//		main.clickAdminThree();
-//		assertTrue(main.validAdminThree().contains("Stephanie"));
+		assertTrue(main.validAdminOne().contains("Diana"));
+		main.clickAdminTwo();
+		assertTrue(main.validAdminTwo().contains("Johnny"));
+		main.clickAdminThree();
+		assertTrue(main.validAdminThree().contains("Stephanie"));
+	}*/
+	
+//	@Test(priority = 5)
+	public void testMen() {
+		main.clickMan();
+//		main.clickWomen();
+		assertEquals(main.getValidManWoman(), "FOR LADIES");
 	}
 	
+	@Test(priority = 6)
+	public void testChangePass() {
+		testLogin();
+		acc.toChange();
+		acc.addDetails();
+		acc.saveDetails();
+		assertTrue(acc.getValidChange().contains("Account details changed successfully"));
+	}
+	
+	
 //	@Test(priority = 7)
-//	@Test
 	public void testSearch() throws AWTException {
 		selrch.blogOne();
 		selrch.searchData("black");
@@ -139,7 +151,6 @@ public class TestShopDemoQA {
 	}
 	
 //	@Test(priority = 8)
-//	@Test
 	public void testCheckout() throws AWTException {
 		testBuy();
 		buy.clickToCart();
@@ -157,12 +168,12 @@ public class TestShopDemoQA {
 		assertTrue(buy.validBuy().contains("Thank you"));
 	}
 	
-	@Test(priority = 9)
+//	@Test(priority = 9)
 	public void testCommentLogin() {
 		testLogin();
 		comm.toMain();
 		comm.toComment();
-		comm.isiComment("Halooogg");
+		comm.isiComment("Haloooggg");
 		comm.klikSubmitComment();
 		assertEquals(comm.getValidCommentSuccess(), "Halooo");
 	}

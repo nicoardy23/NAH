@@ -30,42 +30,53 @@ public class AccountShopDemoQA {
 	@FindBy(linkText = "My Account")
 	private WebElement accountWeb;
 	
+	/*Register*/
 	@FindBy(id = "reg_username")
 	private WebElement regUser;
-	
 	@FindBy(id = "reg_email")
 	private WebElement regEmail;
-	
 	@FindBy(id = "reg_password")
 	private WebElement regPass;
-	
 	@FindBy(name = "register")
 	private WebElement regButton;
-	
 	@FindBy(xpath = "//div[@id='login']/p")
 	private WebElement validReg;
-	
 	@FindBy(xpath = "//div[@id='primary']//li[1]")
 	private WebElement validRegErr;
 
+	/*Login*/
 	@FindBy(id = "username")
 	private WebElement loginUser;
-	
 	@FindBy(id = "password")
 	private WebElement loginPass;
-
 	@FindBy(id = "rememberme")
 	private WebElement rememberButton;
-	
 	@FindBy(name = "login")
 	private WebElement loginButton;
-	
 	@FindBy(xpath = "//article[@id='post-8']/div/div/div/p")
 	private WebElement validLogin;
-	
 	@FindBy(xpath = "//div[@class='wp-die-message']")
 	private WebElement validLoginBlock;
+	
+	/*Change Pass*/
+	@FindBy(linkText = "Account details")
+	private WebElement toChange;
+	@FindBy(id = "account_first_name")
+	private WebElement firstName;
+	@FindBy(id = "account_last_name")
+	private WebElement lastName;
+	@FindBy(id = "password_current")
+	private WebElement currPass;
+	@FindBy(id = "password_1")
+	private WebElement newPass;
+	@FindBy(id = "password_2")
+	private WebElement newPassRepeated;
+	@FindBy(name = "save_account_details")
+	private WebElement saveButton;
+	@FindBy(xpath = "//article[@id='post-8']/div/div/div")
+	private WebElement validChange;
 
+	
 	//Page Object
 	public void webAcc() {
 		Utils.delay(2, strDelay);
@@ -126,6 +137,26 @@ public class AccountShopDemoQA {
 	
 	public String getValidLoginBlock() {
 		return validLoginBlock.getText();
+	}
+	
+	public void toChange() {
+		this.toChange.click();
+	}
+	
+	public void addDetails() {
+		this.firstName.sendKeys("Nico");
+		this.lastName.sendKeys("CobaLagi");
+		this.currPass.sendKeys("Akuncoba232");
+		this.newPass.sendKeys("Akuncobabaru232");
+		this.newPassRepeated.sendKeys("Akuncobabaru232");
+	}
+	
+	public void saveDetails() {
+		this.saveButton.click();
+	}
+	
+	public String getValidChange() {
+		return this.validChange.getText();
 	}
 	
 	public void zoomOut() throws AWTException {
