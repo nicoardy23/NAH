@@ -30,7 +30,7 @@ public class TestBrokenLinks {
 	public void pageObject() throws AWTException {
 		DriverSingleton.getInstance(Constant.CHROME);
 		driver = DriverSingleton.getDriver();
-		driver.get(Constant.URL);
+		driver.get(Constant.URL_DEMOQA);
 		brokenLinks = new BrokenLinks();
 		brokenLinks.zoomOut();
 //		robot = new Robot();

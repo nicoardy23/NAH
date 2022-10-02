@@ -64,7 +64,7 @@ public class OutlineTestHooks {
 //	@AfterTest
 	@AfterAll
 	public static void closeBrowser() {
-		delay(2, delay);
+//		delay(2, delay);
 		DriverSingleton.closeObjectInstance();
 	}
 	

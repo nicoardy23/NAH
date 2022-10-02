@@ -83,14 +83,14 @@ public class TestShopDemoQA {
 	}
 
 	@Test(priority = 4)
-	public void testComment() throws AWTException, InterruptedException {
+	public void testBuy() throws AWTException, InterruptedException {
 		buy.clickToBuy();
 		buy.pilihColor();
 		buy.pilihSize();
 		buy.tambahQuantity(); 
 		buy.submitButton();
 		assertTrue(buy.validNotif().contains("size grey"));
-		buy.clickToCart();
-		assertTrue(buy.validCart().contains("playboy x missguided plus"));
+//		buy.clickToCart();
+//		assertTrue(buy.validCart().contains("playboy x missguided plus"));
 	}
 }
