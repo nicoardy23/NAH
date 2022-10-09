@@ -5,7 +5,10 @@
     <classes>
       <class name="remedial.remedialkeempat.shopdemoqa.TestShopDemoQA">
         <methods>
+          <include name="testRegister"/>
           <include name="testCommentLogin"/>
+          <include name="testLogin"/>
+          <include name="testChangePass"/>
           <include name="pageObject"/>
           <include name="closeBrowser"/>
         </methods>

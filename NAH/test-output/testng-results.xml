@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-02T13:38:50 WIB" name="Default suite" finished-at="2022-10-02T13:39:51 WIB" duration-ms="60680">
+  <suite started-at="2022-10-09T11:04:51 WIB" name="Default suite" finished-at="2022-10-09T11:04:51 WIB" duration-ms="12">
     <groups>
     </groups>
-    <test started-at="2022-10-02T13:38:50 WIB" name="Default test" finished-at="2022-10-02T13:39:51 WIB" duration-ms="60680">
-      <class name="remedial.remedialkeempat.shopdemoqa.TestShopDemoQA">
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:remedial.remedialkeempat.shopdemoqa.TestShopDemoQA@d9345cd]" started-at="2022-10-02T13:38:50 WIB" name="pageObject" finished-at="2022-10-02T13:39:17 WIB" duration-ms="27000" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageObject -->
-        <test-method signature="testChangePass()[pri:6, instance:remedial.remedialkeempat.shopdemoqa.TestShopDemoQA@d9345cd]" started-at="2022-10-02T13:39:17 WIB" name="testChangePass" finished-at="2022-10-02T13:39:50 WIB" duration-ms="32456" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChangePass -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:remedial.remedialkeempat.shopdemoqa.TestShopDemoQA@d9345cd]" started-at="2022-10-02T13:39:50 WIB" name="closeBrowser" finished-at="2022-10-02T13:39:51 WIB" duration-ms="1195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- remedial.remedialkeempat.shopdemoqa.TestShopDemoQA -->
+    <test started-at="2022-10-09T11:04:51 WIB" name="Default test" finished-at="2022-10-09T11:04:51 WIB" duration-ms="12">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -52,7 +52,7 @@ public class TestShopDemoQA {
 		DriverSingleton.closeObjectInstance();
 	} 
 	
-//	@Test(priority = 0)
+	@Test(priority = 0)
 	public void testRegister() throws AWTException, InterruptedException {
 		acc.klikDismiss();
 		acc.webAcc();
@@ -64,7 +64,7 @@ public class TestShopDemoQA {
 		//jika test register gagal, berarti akun sudah ada
 	}
 	
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void testLogin() {
 		acc.klikDismiss();
 		acc.webAcc();
@@ -74,7 +74,7 @@ public class TestShopDemoQA {
 		assertTrue(acc.getValidLogin().contains("Hello"));
 	}
 	
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void testWishList() {
 		acc.klikDismiss();
 		cart.clickWish();
@@ -82,7 +82,7 @@ public class TestShopDemoQA {
 		assertTrue(cart.validWishLink().contains("PINK"));
 	}
 	
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void testComment() {
 		comm.toPageComment();
 		comm.isiAuthorComment("cobaauthor1");
@@ -92,7 +92,7 @@ public class TestShopDemoQA {
 		assertEquals(comm.getValidComment(), "Error: You entered an incorrect CAPTCHA answer. Please go back and try again.");
 	}
 
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void testBuy() throws AWTException  {
 		buy.clickToBuy();
 		buy.pilihColor();
@@ -126,7 +126,7 @@ public class TestShopDemoQA {
 		assertTrue(main.validAdminThree().contains("Stephanie"));
 	}*/
 	
-//	@Test(priority = 5)
+	@Test(priority = 5)
 	public void testMen() {
 		main.clickMan();
 //		main.clickWomen();
@@ -143,14 +143,14 @@ public class TestShopDemoQA {
 	}
 	
 	
-//	@Test(priority = 7)
+	@Test(priority = 7)
 	public void testSearch() throws AWTException {
 		selrch.blogOne();
 		selrch.searchData("black");
 		assertTrue(selrch.validSearch().contains("black"));
 	}
 	
-//	@Test(priority = 8)
+	@Test(priority = 8)
 	public void testCheckout() throws AWTException {
 		testBuy();
 		buy.clickToCart();
@@ -168,7 +168,7 @@ public class TestShopDemoQA {
 		assertTrue(buy.validBuy().contains("Thank you"));
 	}
 	
-//	@Test(priority = 9)
+	@Test(priority = 9)
 	public void testCommentLogin() {
 		testLogin();
 		comm.toMain();
