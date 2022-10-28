@@ -22,7 +22,6 @@ public class GenString {
 					alp = cons[rand.nextInt(cons.length)];
 				}
 			} else {
-				
 				if (sort.equals(0)) {
 					alp = cons[rand.nextInt(cons.length)];
 				} else {				
