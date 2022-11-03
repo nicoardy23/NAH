@@ -10,7 +10,7 @@ public class SortingAscendingTxtFile {
 	public static void main(String[] args) throws Exception {
 		try {
 			/* READ FILE : PUT DIRECTORY FILE IN FileReader */
-			BufferedReader reader = new BufferedReader(new FileReader("C:\\JobDocumentation\\Nexhub\\Master_Data\\TestSortTXT.txt"));
+			BufferedReader reader = new BufferedReader(new FileReader("C:\\JobDocumentation\\Nexhub\\Master_Data\\Prefix\\CompanyProfile_RampUp6000\\log\\CSV_MD_CompanyProfile.txt"));
 	        Map<String, String> map=new TreeMap<String, String>();
 	        String line="";
 	        while((line=reader.readLine())!=null){
@@ -19,7 +19,7 @@ public class SortingAscendingTxtFile {
 	        reader.close();
 	        try {
 	        	/* CREATE FILE : PUT THE DIRECTORY AND FILE NAME THAT WOULD SAVED TO BE */
-	        	FileWriter writer = new FileWriter("C:\\JobDocumentation\\Nexhub\\Master_Data\\WriteSortTXT.txt");
+	        	FileWriter writer = new FileWriter("C:\\JobDocumentation\\Nexhub\\Master_Data\\Prefix\\CompanyProfile_RampUp6000\\log\\CSV_MD_CompanyProfile-Sorted.txt");
 		        for(String val : map.values()){
 		            writer.write(val);  
 		            writer.write('\n');
